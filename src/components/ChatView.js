@@ -415,9 +415,18 @@ const ChatView = () => {
             <span className="w-8 h-8">
               <img style={{width : "80px", height : "80px", marginLeft : "30px"}} src={bot} alt="" />
             </span>
+
+            <span onClick={ // redirect to course page
+              () => {
+                window.location.href = "https://nickchakarov.com/30-days-to-3k-course-module1";
+              }
+
+            }>
+          <h1 style={{ margin: "30px" }}>Обратно към курса</h1>
+            </span>
           
         <span onClick={SignOut}>
-          <h1 style={{ margin: "30px" }}>Log out</h1>
+          <h1 style={{ margin: "30px" }}>Излез</h1>
             </span>
       
         
@@ -547,7 +556,7 @@ const ChatView = () => {
             className="chatview__btn-send"
             onClick={sendMessage}
           >
-            Send
+            Генерирай
           </button>
         </form>
       </div>
