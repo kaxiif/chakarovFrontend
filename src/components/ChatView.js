@@ -411,12 +411,16 @@ const ChatView = () => {
   return (
     <>
       <div className="bg-slate-200">
-        <h2 style={{ margin: "30px", fontZize: "x-large", color: "dark" }}>
-          Logo
-        </h2>
+      
+            <span className="w-8 h-8">
+              <img style={{width : "80px", height : "80px", marginLeft : "30px"}} src={bot} alt="" />
+            </span>
+          
         <span onClick={SignOut}>
           <h1 style={{ margin: "30px" }}>Log out</h1>
-        </span>
+            </span>
+      
+        
       </div>
       <div className="chatview">
         <main className="chatview__chatarea">
