@@ -48,18 +48,19 @@ const Login = () => {
  
 
   return (
-    <div >
+    <div style={{background : "#535557" , height : "100vh"}} >
       <div
         style={{
           alignItems: "center",
           fontSize: "30px",
-          fontFamily: "sans-serif",
+        
           fontWeight: "bold",
         }}
         className="header"
       >
-        <div style={{ alignItems: "center" }} className="logo">
-          <h1>Login page</h1>
+        <div style={{ alignItems: "center", textAlign : "center" }} className="logo">
+          <h2 style={{fontFamily: "cursive"}}>Kolyo - The Copywriter - </h2>
+          <p style={{fontFamily: "cursive" , lineHeight : "1"}}>чат-ботът, който ти помага да си правиш продажбените текстове за сайта, рекламата, блога и мейлите си.</p>
         </div>
       </div>
       {
@@ -115,8 +116,9 @@ const Login = () => {
               type="submit"
               onClick={() => login()}
             >
-              Login
+              Вход
             </button>
+            <p style={{fontSize : "12px", color : "white", }}>Нямаш акаунт?</p>
             <button
               style={{
                 padding: "10px",
@@ -128,7 +130,7 @@ const Login = () => {
               type="submit"
               onClick={() => window.location.href = "/register"}
             >
-              Register
+               Регистрирай се!
             </button>
           </div>
         </div>

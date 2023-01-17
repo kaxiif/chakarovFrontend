@@ -9,7 +9,7 @@ const Thinking = () => {
           <MdComputer />
         </div>
         <div className="text-left message__createdAt">
-          <div className="message__thinking">Кольо мисли...</div>
+          <div className="message__thinking">мисля...</div>
         </div>
       </div>
     </div>
