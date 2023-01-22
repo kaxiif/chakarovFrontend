@@ -1,1 +1,1 @@
-export const API = "https://chakarovbackend.up.railway.app";
+export const API = "https://chakarov.letsbuildhere.com";

@@ -79,7 +79,7 @@
 //   async function editChat(id, title) {
 //     console.log(id);
 //     console.log(title);
-//     let chat = await fetch(`https://chakarovbackend.up.railway.app/chat/${id}`, {
+//     let chat = await fetch(`https://chakarov.letsbuildhere.com/chat/${id}`, {
 //       method: "PUT",
 //       headers: {
 //         "Content-Type": "application/json",
@@ -127,7 +127,7 @@
 
 //   useEffect(() => {
 //     // fetch chats by allChats by passing jwt in header
-//     let chats = fetch("https://chakarovbackend.up.railway.app/allChats", {
+//     let chats = fetch("https://chakarov.letsbuildhere.com/allChats", {
 //       method: "GET",
 //       headers: {
 //         "Content-Type": "application/json",
@@ -152,7 +152,7 @@
 
 
 
-//     // let chat = await fetch(`https://chakarovbackend.up.railway.app/chat/${id}`, {
+//     // let chat = await fetch(`https://chakarov.letsbuildhere.com/chat/${id}`, {
 //     //   method: "PUT",
 //     //   headers: {
 //     //     "Content-Type": "application/json",
@@ -173,7 +173,7 @@
 
 //   async function deleteChat(id) {
 //     console.log(id);
-//     let chat = await fetch(`https://chakarovbackend.up.railway.app/deleteChat/${id}`, {
+//     let chat = await fetch(`https://chakarov.letsbuildhere.com/deleteChat/${id}`, {
 //       method: "DELETE",
 //       headers: {
 //         "Content-Type": "application/json",

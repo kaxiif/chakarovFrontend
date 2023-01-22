@@ -8,7 +8,7 @@ const Register = () => {
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
 
-  let API = "https://chakarovbackend.up.railway.app";
+  let API = "https://chakarov.letsbuildhere.com";
 
   const login = () => {
     fetch(`${API}/signup`, {

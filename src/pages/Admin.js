@@ -9,7 +9,7 @@ const Admin = () => {
 
   //   if(jwt){
   //     // verify jwt
-  //     fetch("https://chakarovbackend.up.railway.app/verify", {
+  //     fetch("https://chakarov.letsbuildhere.com/verify", {
   //       method: "GET",
   //       headers: {
   //         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ const Admin = () => {
   const [users, setUsers] = useState([]);
 
   const getAllUsers = () => {
-    fetch("https://chakarovbackend.up.railway.app/users", {
+    fetch("https://chakarov.letsbuildhere.com/users", {
       method: "GET",
       headers: {
 
@@ -73,7 +73,7 @@ const Admin = () => {
    let jwt = localStorage.getItem("adminJWT");
 
     
-    fetch("https://chakarovbackend.up.railway.app/signup", {
+    fetch("https://chakarov.letsbuildhere.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -102,7 +102,7 @@ const Admin = () => {
 
     async function deleteUser (id) {
     let jwt = localStorage.getItem("adminJWT");
-    let chat = await fetch(`https://chakarovbackend.up.railway.app/delete/${id}`, {
+    let chat = await fetch(`https://chakarov.letsbuildhere.com/delete/${id}`, {
       method: "get",
       headers: {
         "Content-Type": "application/json",
@@ -126,7 +126,7 @@ const Admin = () => {
    
    
 
-    fetch("https://chakarovbackend.up.railway.app/updateUser", {
+    fetch("https://chakarov.letsbuildhere.com/updateUser", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -156,7 +156,7 @@ const Admin = () => {
   };
 
    const approveUser = (id) => {
-     fetch("https://chakarovbackend.up.railway.app/approveUser", {
+     fetch("https://chakarov.letsbuildhere.com/approveUser", {
        method: "PUT",
        headers: {
          "Content-Type": "application/json",
@@ -179,7 +179,7 @@ const Admin = () => {
   async function sendEmail(id) {
     console.log(id);
     let jwt = localStorage.getItem("adminJWT");
-    let chat = await fetch(`https://chakarovbackend.up.railway.app/sendmail/${id}`, {
+    let chat = await fetch(`https://chakarov.letsbuildhere.com/sendmail/${id}`, {
       method: "get",
       headers: {
         "Content-Type": "application/json",
@@ -204,7 +204,7 @@ const Admin = () => {
   //   console.log(jwt);
   //   console.log(id);
     
-  //   // fetch("https://chakarovbackend.up.railway.app/sendmail", {
+  //   // fetch("https://chakarov.letsbuildhere.com/sendmail", {
   //   //   method: "get",
   //   //   headers: {
   //   //     "Content-Type": "application/json",

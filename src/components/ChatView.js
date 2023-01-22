@@ -113,7 +113,7 @@ const ChatView = () => {
     const newMsg = formValue
     const aiModel = selected
 
-    const BASE_URL = 'https://chakarovbackend.up.railway.app/'
+    const BASE_URL = 'https://chakarov.letsbuildhere.com/'
     const PATH = aiModel === options[0] ? 'davinci' : 'dalle'
     const POST_URL = BASE_URL + PATH;
 
@@ -226,7 +226,7 @@ const ChatView = () => {
     
 
     localStorage.setItem("chatId", id);
-    let chat = await fetch(`https://chakarovbackend.up.railway.app/chat/${id}`, {
+    let chat = await fetch(`https://chakarov.letsbuildhere.com/chat/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -271,7 +271,7 @@ const ChatView = () => {
   //   console.log(id);
   //   console.log(currentTitle);
  
-  //   let chat = await fetch(`https://chakarovbackend.up.railway.app/updateChat/${id}`, {
+  //   let chat = await fetch(`https://chakarov.letsbuildhere.com/updateChat/${id}`, {
   //     method: "PUT",
   //     headers: {
   //       "Content-Type": "application/json",
@@ -315,7 +315,7 @@ const ChatView = () => {
   
   useEffect(() => {
     // fetch chats by allChats by passing jwt in header
-    let chats = fetch("https://chakarovbackend.up.railway.app/allChats", {
+    let chats = fetch("https://chakarov.letsbuildhere.com/allChats", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -345,7 +345,7 @@ const ChatView = () => {
     console.log(id);
     console.log(currentTitle);
 
-    let chat = await fetch(`https://chakarovbackend.up.railway.app/updateChat`, {
+    let chat = await fetch(`https://chakarov.letsbuildhere.com/updateChat`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -378,7 +378,7 @@ const ChatView = () => {
 
   async function deleteChat(id) {
     console.log(id);
-    let chat = await fetch(`https://chakarovbackend.up.railway.app/deleteChat/${id}`, {
+    let chat = await fetch(`https://chakarov.letsbuildhere.com/deleteChat/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
